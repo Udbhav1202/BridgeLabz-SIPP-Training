@@ -1,4 +1,4 @@
-package ControlFlows;
+package ControlFlows.Leve1;
 import java.util.*;
 public class CheckNumIsDivisbleBy5 {
 	public static void main(String[] args) {

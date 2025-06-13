@@ -1,4 +1,4 @@
-package ControlFlows;
+package ControlFlows.Leve1;
 import java.util.*;
 public class CheckWhichNumberIsLargest {
 
@@ -18,7 +18,7 @@ public class CheckWhichNumberIsLargest {
 		}else {
 			num3res = true;
 		}
-		System.out.println("Is the first number the largest?"+num1res+"\nIs the second number the largest?"+num2res+"\nIs the third number the largest?"+num3res+"\n"
+		System.out.println("Is the first number the largest? "+num1res+"\nIs the second number the largest? "+num2res+"\nIs the third number the largest? "+num3res+"\n"
 				+ "");
 		
 
