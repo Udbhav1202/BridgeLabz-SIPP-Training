@@ -1,4 +1,4 @@
-package Day1.Level2;
+package ProgrammingElements.Level2;
 import java.util.*;
 
 public class SidesOfSquare {

@@ -1,4 +1,4 @@
-package Day1.level1;
+package ProgrammingElements.level1;
 import java.util.*;
 
 public class KmToMilesUserInput {
