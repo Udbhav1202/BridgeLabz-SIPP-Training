@@ -1,4 +1,4 @@
-package ControlFlows.Level1;
+package ControlFlows.level1;
 import java.util.*;
 public class CheckIfFirstIsSmallest {
 
