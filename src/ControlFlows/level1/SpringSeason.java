@@ -1,4 +1,4 @@
-package ControlFlows.Leve1;
+package ControlFlows.Level1;
 import java.util.*;
 public class SpringSeason {
 
