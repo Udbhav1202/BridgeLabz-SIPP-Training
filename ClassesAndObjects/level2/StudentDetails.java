@@ -1,4 +1,4 @@
-package OOPs.level2;
+package ClassesAndObjects.level2;
 
 class Student{
 	String name;
