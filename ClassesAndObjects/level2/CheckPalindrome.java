@@ -6,12 +6,29 @@ class PalindromeChecker{
 		this.text = text;
 	}
 	
+	public boolean isPalindrome() {
+		int l = 0;
+		int r = text.length()-1;
+		while(l<=r) {
+			if(text.charAt(l) != text.charAt(r)) {
+				return false;
+			}
+			l++;
+			r--;
+		}
+		return true;
+	}
 	
+	public void display() {
+		System.out.println(isPalindrome());
+	}
 }
 public class CheckPalindrome {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		PalindromeChecker check = new PalindromeChecker("abaa");
+		check.display();
+		
 
 	}
 
