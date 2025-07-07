@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MovieDoublyLinkedList {
 	private Movie head = null;
 
-    // 1. Add at the beginning
     public void addAtBeginning(String title, double rating, int yearOfRelease, String director) {
         Movie newMovie = new Movie(title, rating, yearOfRelease, director);
         newMovie.next = head;
@@ -14,7 +13,7 @@ public class MovieDoublyLinkedList {
         System.out.println("Added at beginning.");
     }
     
- // 2. Add at the end
+
     public void addAtEnd(String title, double rating, int yearOfRelease, String director) {
         Movie newMovie = new Movie(title, rating, yearOfRelease, director);
         if (head == null) {
@@ -29,7 +28,7 @@ public class MovieDoublyLinkedList {
         }
         System.out.println("Added at end.");
     }
- // 3. Add at specific position (1-based index)
+    
     public void addAtPosition(int position, String title, double rating, int yearOfRelease, String director) {
         if (position <= 0) {
             System.out.println("Invalid position.");
@@ -54,7 +53,6 @@ public class MovieDoublyLinkedList {
         System.out.println("Added at position " + position + ".");
     }
     
- // 4. Delete by roll number
     public void deleteByTitle(String title) {
         if (head == null) {
             System.out.println("List is empty.");
@@ -79,7 +77,6 @@ public class MovieDoublyLinkedList {
         }
     }
     
- // 5. Search by roll number
     public void searchByDirector(String directorName) {
         Movie temp = head;
         while (temp != null) {
@@ -96,7 +93,6 @@ public class MovieDoublyLinkedList {
         System.out.println("Movie with Director Name " + directorName + " not found.");
     }
     
- // 6. Update grade by roll number
     public void updateRating(String movieTitle, double newRating) {
         Movie temp = head;
         while (temp != null) {
@@ -110,7 +106,6 @@ public class MovieDoublyLinkedList {
         System.out.println("Roll Number not found.");
     }
 
-    // 7. Display all student records
     public void displayAll() {
         if (head == null) {
             System.out.println("List is empty.");
@@ -178,7 +173,6 @@ public class MovieDoublyLinkedList {
                 case 3:
                 	System.out.print("Enter Movie Title: ");
                     title = scanner.nextLine();
-                    scanner.nextLine();
                     System.out.print("Enter Director Name: ");
                     director = scanner.nextLine();
                     System.out.print("Enter Year of Release: ");
@@ -201,7 +195,7 @@ public class MovieDoublyLinkedList {
                     System.out.print("Enter Movie Title to Update : ");
                     title = scanner.nextLine();
                     System.out.print("Enter New Grade: ");
-                    rating = scanner.next().charAt(0);
+                    rating = scanner.nextDouble();
                     list.updateRating(title, rating);
                     break;
                 case 7:
