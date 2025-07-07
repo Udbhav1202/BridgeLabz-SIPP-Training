@@ -25,7 +25,7 @@ class Thermostat extends Device {
 
     @Override
     public void displayStatus() {
-        super.displayStatus(); // Show base device info
+        super.displayStatus(); 
         System.out.println("Temperature Setting: " + temperatureSetting + "°C");
     }
 }
